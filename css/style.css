@@ -1,0 +1,138 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+	font-family: "Indie Flower", sans-serif;
+}
+a.btn {
+	text-decoration: none;
+	padding: 5px 10px;
+	background: navy;
+	color: white;
+	border: 5px solid white;
+
+}
+a.btn:hover {
+	color: black;
+	background: grey;
+}
+a.link:hover {
+	color: #92E0E5;;
+}
+a.link{
+	color: white;
+} 
+
+
+#header {
+	background: #B6D0E6;
+	color: white;
+	padding: 0 25px;
+}
+ 
+#header img {
+	float: left;
+	width: 50px;
+}
+
+#header ul {
+	float: right;
+}
+
+#header ul li {
+	display: inline-block;
+	margin: 15px 5px 0;
+	font-size: 25px;
+}
+
+#intro {
+	background: url("../images/background.jpg") no-repeat;
+	background-size: cover;
+	padding: 25px 0;
+	text-align: center;
+}
+
+#intro h1 {
+	text-align: center;
+	margin: 0 0 18px;
+	font-style: italic;
+	font-size: 45px;
+	color: white;
+}
+
+#intro img {
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 300px;
+	display: block;
+	margin: 0 auto 25px;
+}
+/* content*/
+#content {
+	padding: 40px 0;
+}
+ #content h3 {
+ 	color: navy;
+ 	font-size: 22px;
+ }
+
+#content img {
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 180px;
+	margin: 25px;
+}
+ #content p {
+ 	margin-bottom: 20px;
+ }
+ #content .three {
+ 	width: 33.3%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding: 0 80px;
+	color: navy;
+
+ }
+ /* footer*/
+ #footer {
+ 	color: white;
+ 	background-color: #B6D0E6;
+ 	text-align: center;
+ 	padding: 20px 0;
+ }
+ #footer ul {
+ 	margin: 40px 0;
+ 	
+ }
+ #footer li {
+ 	display: inline-block;
+ 	padding: 0 17px;
+ }
+ #footer a {
+	text-decoration: none;
+}
